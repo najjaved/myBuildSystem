@@ -24,7 +24,9 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 		echo 'Starting Build...'
 
 		stage ('Pre-Clean'){
+		echo 'Step before pre-clean ..'
 		preClean()
+		echo 'Step after pre-clean'
 		}
 	  
 		stage('SCM Checkout') {
